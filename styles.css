@@ -125,7 +125,6 @@ nav ul li a {
 .product-item img {
     max-width: 100%;
     height: auto;
-    /* Permet à l'image de conserver ses proportions */
     border-radius: 5px;
     margin-bottom: 15px;
 }
@@ -162,7 +161,6 @@ nav ul li a {
 @media (max-width: 768px) {
     .product-item {
         flex: 1 1 calc(50% - 40px);
-        /* 2 cartes par ligne sur les tablettes */
         max-width: calc(50% - 40px);
     }
 }
@@ -170,14 +168,12 @@ nav ul li a {
 @media (max-width: 480px) {
     .product-item {
         flex: 1 1 100%;
-        /* 1 carte par ligne sur les mobiles */
         max-width: 100%;
     }
 }
 
 footer {
     background-color: #8B4513;
-    /* Brun cuir pour le footer */
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -209,7 +205,6 @@ footer .social-media a {
     width: 20px;
     height: 20px;
     background: #6F4E37;
-    /* Couleur café */
     border-radius: 50%;
     animation: fall linear infinite;
 }
@@ -277,7 +272,6 @@ footer .social-media a {
     position: absolute;
     font-size: 2rem;
     color: #6F4E37;
-    /* Couleur café */
     animation: float linear infinite;
 }
 
@@ -328,7 +322,6 @@ footer .social-media a {
     width: 10px;
     height: 10px;
     background: #8B7355;
-    /* Couleur fumée */
     border-radius: 50%;
     animation: smoke 5s linear infinite;
 }
