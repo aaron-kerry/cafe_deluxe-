@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Café Deluxe - Vente de Café</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/carrousel.css">
 </head>
 
 <body>
@@ -15,9 +17,12 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="index.html">Accueil</a></li>
                 <li><a href="produits.html">Nos Produits</a></li>
+                <li><a href="#presentation">About Us</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li> <a href="panier.html" class="cart-icon" data-count="0">🛒</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -51,32 +56,64 @@
         </div>
     </section>
 
-    <section id="produits" class="products">
+   
+    <section id="produits"  class="carrousel-container">
         <h2>Nos Produits</h2>
-        <div class="product-list">
-            <div class="product-item">
-                <img src="images/coffe_bresile.jpeg" alt="Café Brésilien">
-                <h3>Café Brésilien</h3>
-                <p>Un café doux et aromatique, parfait pour commencer la journée.</p>
-                <p class="price">€9.99</p>
-                <button>Acheter</button>
+            <button class="carrousel-btn prev-btn">&lt;</button> 
+            <div class="carrousel-product-list">
+                <div class="carrousel-product-item">
+                    <img src="images/coffe_bresile.jpeg" alt="Café Brésilien">
+                    <h3>Café Brésilien</h3>
+                    <p>Un café doux et aromatique, parfait pour commencer la journée.</p>
+                    <p class="price">€9.99</p>
+                    <a href="acheter.html"><button>Acheter</button></a>
+                </div>
+                <div class="carrousel-product-item">
+                    <img src="images/cafe_colombien.jpeg" alt="Café Colombien">
+                    <h3>Café Colombien</h3>
+                    <p>Un café riche et équilibré, idéal pour les amateurs de saveurs intenses.</p>
+                    <p class="price">€12.99</p>
+                    <a href="acheter.html"><a href="acheter.html"><button>Acheter</button></a></a>
+                </div>
+                <div class="carrousel-product-item">
+                    <img src="images/cafe_liegeois.jpeg" alt="Café Éthiopien">
+                    <h3>Café Liegeois</h3>
+                    <p>Un café fruité et complexe, pour une expérience unique.</p>
+                    <p class="price">€14.99</p>
+                    <a href="acheter.html"><button>Acheter</button></a>
+                </div>
+                <div class="carrousel-product-item">
+                    <img src="images/cafe_liegeois.jpeg" alt="Café Éthiopien">
+                    <h3>Café Liegeois</h3>
+                    <p>Un café fruité et complexe, pour une expérience unique.</p>
+                    <p class="price">€14.99</p>
+                    <a href="acheter.html"><button>Acheter</button></a>
+                </div>
             </div>
-            <div class="product-item">
-                <img src="images/cafe_colombien.jpeg" alt="Café Colombien">
-                <h3>Café Colombien</h3>
-                <p>Un café riche et équilibré, idéal pour les amateurs de saveurs intenses.</p>
-                <p class="price">€12.99</p>
-                <button>Acheter</button>
-            </div>
-            <div class="product-item">
-                <img src="images/cafe_liegeois.jpeg" alt="Café Éthiopien">
-                <h3>Café Liegeois</h3>
-                <p>Un café fruité et complexe, pour une expérience unique.</p>
-                <p class="price">€14.99</p>
-                <button>Acheter</button>
-            </div>
-        </div>
+            <button class="carrousel-btn next-btn">&gt;</button> 
     </section>
+
+     <!-- Présentation de l'entreprise -->
+     <section id="presentation" class="company-presentation">
+        <h2>À propos de Café Deluxe</h2>
+
+        <p>Bienvenue chez <strong>Café Deluxe</strong>, votre destination privilégiée pour découvrir les meilleurs cafés du monde. Depuis notre création, nous nous engageons à vous offrir des cafés d'exception, soigneusement sélectionnés et torréfiés pour révéler leurs arômes uniques.</p>
+
+        <img src="images/img_p1_index.jpeg" alt="Café Deluxe" class="presentation-image">
+
+        <p>Notre passion pour le café nous pousse à explorer les plantations les plus renommées à travers le globe, du Brésil à l'Éthiopie, en passant par la Colombie et le Kenya. Chaque grain que nous proposons est le fruit d'un savoir-faire artisanal et d'une quête constante de qualité.</p>
+
+        <img src="images/img_plantation_coffe.jpeg" alt="Plantation de café" class="presentation-image">
+
+        <p>Chez Café Deluxe, nous croyons que chaque tasse de café raconte une histoire. C'est pourquoi nous nous efforçons de vous offrir une expérience gustative inoubliable, que vous dégustiez notre café chez vous ou dans notre espace dédié.</p>
+
+        <img src="images/img_coffe_index.jpeg" alt="Tasse de café" class="presentation-image">
+
+         <p>Découvrez notre sélection de cafés premium et laissez-vous emporter par des saveurs riches et variées, adaptées à tous les palais. Que vous soyez amateur de cafés doux et aromatiques ou de saveurs intenses et corsées, Café Deluxe a le café qu'il vous faut.</p>
+
+         <img src="images/img_index_hot_coffe.jpeg" alt="Café premium" class="presentation-image">
+    </section>
+
 
     <footer id="contact">
         <div class="footer-content">
@@ -85,13 +122,9 @@
         <p>Téléphone: +228 99 82 81 82</p>
         <p>Adresse: Lomé, Togo</p>
         </div>
-        <div class="social-media">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-
-        </div>
     </footer>
+    <script src="scripts/carrousel_effect.js" defer></script>
+    <script src="scripts/cart.js" defer></script>
 </body>
 
 </html>

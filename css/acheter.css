@@ -1,0 +1,115 @@
+/* Styles pour la page de produit */
+.acheter-page {
+    padding: 50px 20px;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+.acheter-details {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Espacement entre l'image et les informations */
+    margin-bottom: 40px;
+}
+
+.acheter-image {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.acheter-info {
+    text-align: left;
+}
+
+.acheter-info h2 {
+    font-size: 2em;
+    color: #8B4513;
+    margin-bottom: 20px;
+}
+
+.acheter-info .description {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.acheter-info .price {
+    font-size: 1.5em;
+    color: #8B4513;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.quantity-selector {
+    margin-bottom: 20px;
+}
+
+.quantity-selector label {
+    font-size: 1.1em;
+    color: #555;
+    margin-right: 10px;
+}
+
+.quantity-selector input {
+    width: 60px;
+    padding: 5px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-to-cart {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #e65a50;
+}
+
+/* Responsive design pour les écrans plus petits */
+@media (max-width: 768px) {
+    .acheter-details {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .acheter-image {
+        max-width: 100%;
+    }
+
+    .acheter-info {
+        text-align: center;
+    }
+}
+
+/* Styles pour la notification */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}

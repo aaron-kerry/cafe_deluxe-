@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Brésilien - Café Deluxe</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/acheter.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Café Deluxe</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produits.html">Nos Produits</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li> <a href="panier.html" class="cart-icon" data-count="0">🛒</a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section du produit -->
+    <section id="produit" class="acheter-page">
+        <div class="acheter-details">
+            <img src="images/coffe_bresile.jpeg" alt="Café Brésilien" class="acheter-image">
+            <div class="acheter-info">
+                <h2>Café Brésilien</h2>
+                <p class="description">Un café doux et aromatique, parfait pour commencer la journée. Provenant des plantations brésiliennes, ce café est torréfié avec soin pour préserver ses arômes uniques.</p>
+                <p class="price">€9.99</p>
+                <div class="quantity-selector">
+                    <label for="quantity">Quantité :</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                </div>
+                <button class="add-to-cart">Ajouter au panier</button>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <h3>Contactez-nous</h3>
+            <p>Email: contact@cafedeluxe.com</p>
+            <p>Téléphone: +228 99 82 81 82</p>
+            <p>Adresse: Lomé, Togo</p>
+        </div>
+
+    </footer>
+    <script src="scripts/cart.js" defer></script>
+</body>
+
+</html>
